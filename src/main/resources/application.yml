@@ -1,0 +1,24 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    database: postgresql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: example
+  data:
+    neo4j:
+      uri: bolt://localhost:7687
+      username: neo4j
+      password: secret
+    mongodb:
+#      username: root
+#      password: example
+#      database: test_db
+#      port: 27017
+      uri: mongodb://user:example@127.0.0.1:27017/admin
